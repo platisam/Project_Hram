@@ -1,15 +1,15 @@
 <template>
   <div class="header">
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/contact">Contact</RouterLink>
+    <!--<RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/contact">Contact</RouterLink>-->
 
     <img
-      src="../assets/sveti-vasilije.jpg"
+      src="@/assets/sveti-vasilije.jpg"
       alt="slika_header"
       title="Свети Василије Острошки"
     />
 
-    <button>МЕНИ</button>
+    <button @click="responsiveHeader()">МЕНИ</button>
 
     <ul>
       <li><a href="index.html">Почетна</a></li>
@@ -20,6 +20,21 @@
     </ul>
   </div>
 </template>
+
+<script setup>
+let btnHeader = document.querySelector(".header button");
+let menuList = document.querySelector(".header ul");
+
+const responsiveHeader = () => {
+  if (btnHeader.textContent === "МЕНИ") {
+    menuList.style.display = "block";
+    btnHeader.textContent = "ЗАТВОРИ";
+  } else {
+    menuList.style.display = "none";
+    btnHeader.textContent = "МЕНИ";
+  }
+};
+</script>
 
 <style lang="scss">
 .header {
@@ -32,45 +47,48 @@
   border: 2px solid orange;
   background-color: rgba(11, 14, 67, 0.9);
   margin-bottom: 50px;
-}
 
-.header img {
-  max-width: 200px;
-  height: 60px;
-  width: 60px;
-  border-radius: 7px;
-  outline: 1px solid orange;
-}
+  img {
+    max-width: 200px;
+    height: 60px;
+    width: 60px;
+    border-radius: 7px;
+    outline: 1px solid rgb(215, 165, 0);
+  }
 
-.header ul {
-  display: flex;
-  list-style: none;
-  font-size: 16px;
-  justify-content: space-around;
-  z-index: 99;
-}
+  button {
+    display: none;
+    padding: 10px;
+    color: rgb(0, 0, 128);
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 128);
+    background-color: rgb(255, 235, 205);
+  }
 
-.header ul li a {
-  padding: 10px 20px;
-  display: inline-block;
-  color: white;
-}
+  ul {
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    justify-content: space-around;
+    z-index: 99;
 
-.header ul li a:hover {
-  text-decoration: none;
-  color: #fff;
-  position: relative;
-  top: -2px;
-}
+    li {
+      a {
+        padding: 10px 20px;
+        display: inline-block;
+        color: #fff;
 
-.header button {
-  display: none;
-  padding: 10px;
-  color: navy;
-  font-weight: 700;
-  border-radius: 5px;
-  border: 2px solid navy;
-  background-color: blanchedalmond;
+        &:hover {
+          text-decoration: none;
+          color: rgb(215, 165, 0);
+          position: relative;
+          top: -2px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1000px) {
