@@ -22,8 +22,8 @@
 </template>
 
 <script setup>
-let desnoDugme = document.querySelector("#right-btn");
-let levoDugme = document.querySelector("#left-btn");
+//let desnoDugme = document.querySelector("#right-btn");
+//let levoDugme = document.querySelector("#left-btn");
 let slike = document.querySelectorAll(".slider-images img");
 
 let indekSlike = 0;

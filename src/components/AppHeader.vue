@@ -9,29 +9,50 @@
       title="Свети Василије Острошки"
     />
 
-    <button @click="responsiveHeader()">МЕНИ</button>
+    <button @click="responsiveHeader()">{{ btntext }}</button>
 
-    <ul>
-      <li><a href="index.html">Почетна</a></li>
-      <li><a href="o_nama.html" target="_blank">О нама</a></li>
-      <li><a href="https://www.eparhijabanatska.rs/veronauka-2/">Веронаука</a></li>
-      <li><a href="#">Галерија</a></li>
-      <li><a href="contact.html" target="_blank">Контакт</a></li>
+    <ul v-if="ulList">
+      <li>
+        <a href="index.html">{{ pocetna }}</a>
+      </li>
+      <li>
+        <a href="o_nama.html" target="_blank">{{ oNama }}</a>
+      </li>
+      <li>
+        <a href="https://www.eparhijabanatska.rs/veronauka-2/" target="_blank">{{
+          veroNauka
+        }}</a>
+      </li>
+      <li>
+        <a href="#">{{ galery }}</a>
+      </li>
+      <li>
+        <a href="/contact" target="_blank">{{ contact }}</a>
+      </li>
     </ul>
   </div>
 </template>
 
 <script setup>
-let btnHeader = document.querySelector(".header button");
-let menuList = document.querySelector(".header ul");
+import { ref } from "vue";
 
+let btntext = ref("МЕНИ");
+let ulList = ref(true);
+
+let pocetna = ref("Почетна");
+let oNama = ref("О нама");
+let veroNauka = ref("Веронаука");
+let galery = ref("Галерија");
+let contact = ref("Контакт");
+
+let lista = document.querySelector(".header ul");
 const responsiveHeader = () => {
-  if (btnHeader.textContent === "МЕНИ") {
-    menuList.style.display = "block";
-    btnHeader.textContent = "ЗАТВОРИ";
+  if (btntext.value === "МЕНИ") {
+    ulList.value = true;
+    btntext.value = "ЗАТВОРИ";
   } else {
-    menuList.style.display = "none";
-    btnHeader.textContent = "МЕНИ";
+    ulList.value = false;
+    btntext.value = "МЕНИ";
   }
 };
 </script>
