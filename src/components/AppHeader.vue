@@ -13,14 +13,14 @@
 
     <ul v-if="ulList">
       <li>
-        <a href="index.html">{{ pocetna }}</a>
+        <a href="index.html">{{ start }}</a>
       </li>
       <li>
-        <a href="o_nama.html" target="_blank">{{ oNama }}</a>
+        <a href="o_nama.html" target="_blank">{{ aboutUs }}</a>
       </li>
       <li>
         <a href="https://www.eparhijabanatska.rs/veronauka-2/" target="_blank">{{
-          veroNauka
+          religion
         }}</a>
       </li>
       <li>
@@ -39,13 +39,12 @@ import { ref } from "vue";
 let btntext = ref("МЕНИ");
 let ulList = ref(true);
 
-let pocetna = ref("Почетна");
-let oNama = ref("О нама");
-let veroNauka = ref("Веронаука");
+let start = ref("Почетна");
+let aboutUs = ref("О нама");
+let religion = ref("Веронаука");
 let galery = ref("Галерија");
 let contact = ref("Контакт");
 
-let lista = document.querySelector(".header ul");
 const responsiveHeader = () => {
   if (btntext.value === "МЕНИ") {
     ulList.value = true;
@@ -59,6 +58,7 @@ const responsiveHeader = () => {
 
 <style lang="scss">
 .header {
+  font-family: Arial, sans-serif;
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
