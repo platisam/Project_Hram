@@ -33,7 +33,7 @@
     line-height: 36px;
     letter-spacing: 6.4px;
     text-transform: uppercase;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Viaoda Libre", serif;
     max-width: 850px;
     margin: 0 auto;
     text-align: center;

@@ -4,7 +4,7 @@
     <RouterLink to="/contact">Contact</RouterLink>-->
 
     <img
-      src="@/assets/sveti-vasilije.jpg"
+      src="../assets/header-img.jpg"
       alt="slika_header"
       title="Свети Василије Острошки"
     />

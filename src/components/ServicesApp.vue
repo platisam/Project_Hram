@@ -71,7 +71,7 @@
   line-height: 36px;
   letter-spacing: 6.4px;
   text-transform: uppercase;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Viaoda Libre", serif;
   max-width: 850px;
   margin: 0 auto;
   text-align: center;
@@ -117,14 +117,13 @@
 
     h3 {
       font-size: 20px;
-      font-weight: 700;
+      font-weight: 600;
       letter-spacing: 1.4px;
       color: rgb(94, 94, 12);
       text-shadow: 1px 5px 2px rgba(175, 160, 160, 0.5);
       margin-top: 15px;
       margin-bottom: 25px;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     }
 
     p {
