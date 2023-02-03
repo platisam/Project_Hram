@@ -22,35 +22,35 @@
 </template>
 
 <script setup>
-let slike = document.querySelectorAll(".slider-images img");
+let allImg = document.querySelectorAll(".slider-images img");
 
-let indekSlike = 0;
+let indexImg = 0;
 
 const toRight = () => {
-  obrisiSlike();
-  indekSlike++;
+  removeImg();
+  indexImg++;
 
-  if (indekSlike === slike.length) {
-    indekSlike = 0;
+  if (indexImg === allImg.length) {
+    indexImg = 0;
   }
 
-  slike[indekSlike].style.display = "block";
+  allImg[indexImg].style.display = "block";
 };
 
 const toLeft = () => {
-  obrisiSlike();
-  indekSlike--;
+  removeImg();
+  indexImg--;
 
-  if (indekSlike === -1) {
-    indekSlike = slike.length - 1;
+  if (indexImg === -1) {
+    indexImg = allImg.length - 1;
   }
 
-  slike[indekSlike].style.display = "block";
+  allImg[indexImg].style.display = "block";
 };
 
-const obrisiSlike = () => {
-  slike.forEach((slika) => {
-    slika.style.display = "none";
+const removeImg = () => {
+  allImg.forEach((oneImg) => {
+    oneImg.style.display = "none";
   });
 };
 </script>
