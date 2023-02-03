@@ -1,6 +1,6 @@
 <template>
   <div id="intro">
-    <h1 class="title">Храм Светог Василија Острошког</h1>
+    <h1 class="title">{{ title }}</h1>
 
     <p class="text">
       Црква Светог Василија Острошког налази се на Бежанијској коси, на територији општине
@@ -16,7 +16,10 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+let title = ref("Храм Светог Василија Острошког");
+</script>
 
 <style lang="scss" scoped>
 #intro {
@@ -28,7 +31,7 @@
 
   .title {
     color: rgb(94, 94, 12);
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700px;
     line-height: 36px;
     letter-spacing: 6.4px;

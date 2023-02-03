@@ -1,13 +1,17 @@
 <template>
   <div id="hero">
     <div id="banner-links">
-      <a href="https://crkvenikalendar.rs/">Црквени календар</a>
-      <a href="#">Распоред богослужења</a>
+      <a href="https://crkvenikalendar.rs/">{{ bannerLeft }}</a>
+      <a href="#">{{ bannerRight }}</a>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+let bannerLeft = ref("Црквени календар");
+let bannerRight = ref("Распоред богослужења");
+</script>
 
 <style lang="scss" scoped>
 #hero {
