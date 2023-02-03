@@ -1,10 +1,10 @@
 <template>
   <div class="context">
-    <div class="sadrzaj">
-      <span class="citat"
+    <div class="content">
+      <span class="quote"
         >"Ни један пријатељ злата никада није постао пријатељ Христа или људи."</span
       >
-      <span class="svetac">Свети Јован Златоусти</span>
+      <span class="saint">Свети Јован Златоусти</span>
     </div>
   </div>
 </template>
@@ -30,13 +30,13 @@
   background-position: center center;
   border: 2px solid rgb(215, 165, 0);
 
-  .sadrzaj {
+  .content {
     z-index: 99;
     width: 750px;
     max-width: 100%;
     margin: 0 auto;
 
-    .citat {
+    .quote {
       font-style: italic;
       text-align: center;
       display: block;
@@ -59,7 +59,7 @@
       }
     }
 
-    .svetac {
+    .saint {
       font-size: 18px;
       letter-spacing: 0.9px;
       text-align: center;
