@@ -3,6 +3,7 @@
   <WrapperApp />
   <IntroApp />
   <HeroApp />
+  <ServicesApp />
   <AppFooter />
 
   <RouterView />
@@ -14,5 +15,6 @@ import AppHeader from "./components/AppHeader.vue";
 import WrapperApp from "./components/WrapperApp.vue";
 import IntroApp from "./components/IntroApp.vue";
 import HeroApp from "./components/HeroApp.vue";
+import ServicesApp from "./components/ServicesApp.vue";
 import AppFooter from "./components/AppFooter.vue";
 </script>
