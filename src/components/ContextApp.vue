@@ -22,7 +22,7 @@
     ),
     url(../assets/Gospojina.jpg);
   margin: 50px auto;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Viaoda Libre", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@
       text-align: center;
       display: block;
       font-size: 52px;
-      font-weight: 400;
+      font-weight: 700;
       color: #fff;
       letter-spacing: 1.8px;
       opacity: 0.7;

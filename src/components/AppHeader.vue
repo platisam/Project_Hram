@@ -58,7 +58,8 @@ const responsiveHeader = () => {
 
 <style lang="scss">
 .header {
-  font-family: Arial, sans-serif;
+  font-family: "Viaoda Libre", cursive;
+
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
@@ -100,6 +101,8 @@ const responsiveHeader = () => {
         padding: 10px 20px;
         display: inline-block;
         color: #fff;
+        font-weight: 400;
+        letter-spacing: 0.75px;
 
         &:hover {
           text-decoration: none;

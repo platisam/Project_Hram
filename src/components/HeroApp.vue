@@ -30,12 +30,12 @@
 
   #banner-links {
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Viaoda Libre", cursive;
 
     a:nth-child(1) {
       background-color: rgba(246, 198, 87, 0.7);
       color: rgba(11, 14, 67, 0.9);
-      font-weight: bolder;
+      font-weight: 700;
       font-size: 14px;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -53,7 +53,7 @@
     a:nth-child(2) {
       background-color: rgba(246, 198, 87, 0.7);
       color: rgba(11, 14, 67, 0.9);
-      font-weight: bolder;
+      font-weight: 700;
       font-size: 14px;
       letter-spacing: 1px;
       text-transform: uppercase;
