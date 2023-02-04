@@ -121,7 +121,7 @@ const responsiveHeader = () => {
   }
 
   .header ul {
-    display: none;
+    display: block;
     background-color: rgba(11, 14, 67, 0.9);
     border: 2px solid orange;
     position: absolute;

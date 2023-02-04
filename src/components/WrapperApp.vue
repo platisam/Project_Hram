@@ -22,37 +22,42 @@
 </template>
 
 <script setup>
-let allImg = document.querySelectorAll(".slider-images img");
+import { onMounted } from "vue";
+let toRight = () => null;
+let toLeft = () => null;
+onMounted(() => {
+  let allImg = document.querySelectorAll(".slider-images img");
 
-let indexImg = 0;
+  let indexImg = 0;
 
-const toRight = () => {
-  removeImg();
-  indexImg++;
+  const toRight = () => {
+    removeImg();
+    indexImg++;
 
-  if (indexImg === allImg.length) {
-    indexImg = 0;
-  }
+    if (indexImg === allImg.length) {
+      indexImg = 0;
+    }
 
-  allImg[indexImg].style.display = "block";
-};
+    allImg[indexImg].style.display = "block";
+  };
 
-const toLeft = () => {
-  removeImg();
-  indexImg--;
+  const toLeft = () => {
+    removeImg();
+    indexImg--;
 
-  if (indexImg === -1) {
-    indexImg = allImg.length - 1;
-  }
+    if (indexImg === -1) {
+      indexImg = allImg.length - 1;
+    }
 
-  allImg[indexImg].style.display = "block";
-};
+    allImg[indexImg].style.display = "block";
+  };
 
-const removeImg = () => {
-  allImg.forEach((oneImg) => {
-    oneImg.style.display = "none";
-  });
-};
+  const removeImg = () => {
+    allImg.forEach((oneImg) => {
+      oneImg.style.display = "none";
+    });
+  };
+});
 </script>
 
 <style lang="scss">
