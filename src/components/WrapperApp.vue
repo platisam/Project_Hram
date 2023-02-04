@@ -8,13 +8,41 @@
         alt="slika8"
         title="Слика Храма - купола и звоник"
       />
-      <img src="../assets/kupola.jpg" alt="vitraz" title="Слика Храма - купола" />
-      <img src="../assets/slide3.jpg" alt="slika3" title="Слика Храма - главни улаз" />
-      <img src="../assets/slide5.jpg" alt="slika5" title="Слика Храма - порта" />
-      <img src="../assets/slide6.jpg" alt="slika6" title="Слика Храма - улаз двориште" />
-      <img src="../assets/vitraz.jpg" alt="vitraz" title="Слика Храма - витраж" />
-      <img src="../assets/slide7.jpg" alt="slika7" title="Слика Храма - улаз и купола" />
-      <img src="../assets/slide1.jpg" alt="slika1" title="Слика Храма - пејзаж" />
+      <img
+        src="../assets/kupola.jpg"
+        alt="vitraz"
+        title="Слика Храма - купола"
+      />
+      <img
+        src="../assets/slide3.jpg"
+        alt="slika3"
+        title="Слика Храма - главни улаз"
+      />
+      <img
+        src="../assets/slide5.jpg"
+        alt="slika5"
+        title="Слика Храма - порта"
+      />
+      <img
+        src="../assets/slide6.jpg"
+        alt="slika6"
+        title="Слика Храма - улаз двориште"
+      />
+      <img
+        src="../assets/vitraz.jpg"
+        alt="vitraz"
+        title="Слика Храма - витраж"
+      />
+      <img
+        src="../assets/slide7.jpg"
+        alt="slika7"
+        title="Слика Храма - улаз и купола"
+      />
+      <img
+        src="../assets/slide1.jpg"
+        alt="slika1"
+        title="Слика Храма - пејзаж"
+      />
     </div>
 
     <button id="right-btn" @click="toRight()"><i class="arrow"></i></button>
@@ -57,6 +85,7 @@ onMounted(() => {
       oneImg.style.display = "none";
     });
   };
+  return toLeft(), toRight();
 });
 </script>
 
@@ -64,8 +93,8 @@ onMounted(() => {
 .slider-wrapper {
   max-width: 1000px;
   height: 550px;
-  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.24), 0 9px 46px 8px rgba(0, 0, 0, 0.22),
-    0 11px 15px -7px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.24),
+    0 9px 46px 8px rgba(0, 0, 0, 0.22), 0 11px 15px -7px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
   margin-top: 20px;
   position: relative;

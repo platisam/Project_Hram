@@ -1,17 +1,16 @@
 <template>
   <div class="context">
     <div class="content">
-      <span class="quote">{{ quote }}</span>
-      <span class="saint">{{ saint }}</span>
+      <span class="quote"
+        >"Ни један пријатељ злата никада није постао пријатељ Христа или
+        људи."</span
+      >
+      <span class="saint">Свети Јован Златоусти</span>
     </div>
   </div>
 </template>
 
-<script setup>
-import { ref } from "vue";
-let quote = ref('"Ни један пријатељ злата никада није постао пријатељ Христа или људи."');
-let saint = ref("Свети Јован Златоусти");
-</script>
+<script setup></script>
 
 <style lang="scss" scoped>
 .context {
