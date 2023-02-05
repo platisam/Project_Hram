@@ -17,7 +17,7 @@ const router = createRouter({
     {
       path: "/онама",
       name: "онама",
-      component: () => import("../views/AboutAsView.vue"),
+      component: () => import("../views/AboutView.vue"),
     },
     {
       path: "/религија",
