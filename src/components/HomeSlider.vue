@@ -58,7 +58,7 @@ onMounted(() => {
 
   let indexImg = 0;
 
-  const toRight = () => {
+  toRight = () => {
     removeImg();
     indexImg++;
 
@@ -69,7 +69,7 @@ onMounted(() => {
     allImg[indexImg].style.display = "block";
   };
 
-  const toLeft = () => {
+  toLeft = () => {
     removeImg();
     indexImg--;
 
