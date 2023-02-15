@@ -99,6 +99,7 @@ onMounted(() => {
   margin-top: 20px;
   position: relative;
   margin-bottom: 50px;
+  opacity: 0.83;
 
   .slider-images {
     height: 100%;

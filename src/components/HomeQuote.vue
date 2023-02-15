@@ -30,6 +30,7 @@
   background-size: cover;
   background-position: center center;
   border: 2px solid rgb(215, 165, 0);
+  opacity: 0.83;
 
   .content {
     z-index: 99;

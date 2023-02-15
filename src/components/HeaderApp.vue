@@ -59,6 +59,7 @@ header {
   border: 2px solid orange;
   background-color: rgba(11, 14, 67, 0.9);
   margin-bottom: 50px;
+  opacity: 0.83;
 
   img {
     max-width: 200px;

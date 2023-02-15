@@ -13,7 +13,7 @@
 #hero {
   height: 450px;
   max-width: 1000px;
-
+  opacity: 0.83;
   background-image: linear-gradient(
       to left,
       rgba(0, 0, 0, 0.4) 20%,

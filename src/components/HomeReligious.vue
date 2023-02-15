@@ -90,6 +90,7 @@
   margin: 0 auto;
   text-align: center;
   margin-top: 70px;
+  opacity: 0.83;
   text-shadow: 1px 5px 2px rgba(175, 160, 160, 0.5);
 
   &::before {
@@ -111,6 +112,7 @@
   max-width: 1000px;
   margin: 0 auto;
   margin-top: 20px;
+  opacity: 0.83;
 
   .service-box {
     padding: 10px;

@@ -26,6 +26,7 @@
   border-top: 2px solid rgb(215, 165, 0);
   border-bottom: 2px solid rgb(215, 165, 0);
   margin-bottom: 50px;
+  opacity: 0.83;
 
   .title {
     color: rgb(94, 94, 12);
