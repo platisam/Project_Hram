@@ -52,6 +52,13 @@
       margin-top: 35px;
       margin-bottom: 35px;
     }
+    @media (max-width: 1000px) {
+      margin: 20px auto;
+      font-size: 24px;
+      &::after {
+        margin: 20px auto;
+      }
+    }
   }
 
   .text {
@@ -65,8 +72,13 @@
     font-style: italic;
     max-width: 850px;
     margin: 0 auto;
-    min-width: 500px;
     margin-bottom: 30px;
+  }
+  @media (max-width: 1000px) {
+    padding: 0 20px;
+    .text {
+      line-height: 22px;
+    }
   }
 }
 </style>

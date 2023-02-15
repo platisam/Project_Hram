@@ -1,7 +1,7 @@
 <template>
   <div id="hero">
     <div id="banner-links">
-      <a href="https://crkvenikalendar.rs/">Црквени календар</a>
+      <a href="https://crkvenikalendar.rs/" target="_blank">Црквени календар</a>
       <a href="#">Распоред богослужења</a>
     </div>
   </div>
@@ -31,6 +31,8 @@
   #banner-links {
     text-align: center;
     font-family: "Viaoda Libre", cursive;
+    display: flex;
+    gap: 10px;
 
     a:nth-child(1) {
       background-color: rgba(246, 198, 87, 0.7);
@@ -66,6 +68,10 @@
         background-color: rgba(11, 14, 67, 0.7);
         color: rgba(246, 198, 87);
       }
+    }
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      gap: 15px;
     }
   }
 }

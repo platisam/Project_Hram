@@ -70,6 +70,14 @@
       color: #fff;
       opacity: 0.8;
     }
+    @media (max-width: 1000px) {
+      .quote {
+        font-size: 32px;
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    margin: 10px auto;
   }
 }
 </style>

@@ -103,6 +103,13 @@
     margin-top: 45px;
     margin-bottom: 45px;
   }
+  @media (max-width: 1000px) {
+    margin-top: 20px;
+    font-size: 24px;
+    &::before {
+      margin: 25px auto;
+    }
+  }
 }
 
 #services {
@@ -143,7 +150,7 @@
     }
 
     p {
-      line-height: 30px;
+      line-height: 27px;
       font-style: italic;
       color: rgb(94, 94, 12);
       text-align: justify;
@@ -175,6 +182,32 @@
 
     &:nth-child(4) img {
       margin-top: 15px;
+    }
+  }
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 5px;
+    .service-box {
+      &:first-child {
+        border: none;
+      }
+      &:nth-child(3) {
+        border: none;
+      }
+      &:nth-child(2) {
+        border: none;
+      }
+      p {
+        line-height: 22px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    p {
+      font-size: 14px;
     }
   }
 }

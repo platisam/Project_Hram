@@ -59,7 +59,7 @@ header {
   border: 2px solid orange;
   background-color: rgba(11, 14, 67, 0.9);
   margin-bottom: 50px;
-  opacity: 0.83;
+  opacity: 1;
 
   img {
     max-width: 200px;
@@ -94,6 +94,7 @@ header {
         color: #fff;
         font-weight: 400;
         letter-spacing: 0.75px;
+        text-decoration: none;
 
         &:hover {
           text-decoration: none;
