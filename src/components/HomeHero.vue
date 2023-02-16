@@ -32,7 +32,7 @@
     text-align: center;
     font-family: "Viaoda Libre", cursive;
     display: flex;
-    gap: 10px;
+    gap: 5px;
 
     a:nth-child(1) {
       background-color: rgba(246, 198, 87, 0.7);

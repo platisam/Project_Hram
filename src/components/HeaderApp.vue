@@ -1,10 +1,12 @@
 <template>
   <header>
-    <img
-      src="@/assets/header-img.jpg"
-      alt="slika_header"
-      title="Свети Василије Острошки"
-    />
+    <a href="http://manastirostrog.com/cuda-svetog-vasilija/" target="_blank">
+      <img
+        src="@/assets/header-img.jpg"
+        alt="slika_header"
+        title="Свети Василије Острошки"
+      />
+    </a>
 
     <button @click="responsiveHeader()">{{ btntext }}</button>
 
@@ -65,6 +67,8 @@ header {
     max-width: 200px;
     height: 60px;
     width: 60px;
+    cursor: pointer;
+    object-fit: cover;
     border-radius: 7px;
     outline: 1px solid rgb(215, 165, 0);
   }

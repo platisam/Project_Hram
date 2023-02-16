@@ -4,41 +4,49 @@
 
     <div class="slider-images">
       <img
+        class="fade"
         src="../assets/slide8.jpg"
         alt="slika8"
         title="Слика Храма - купола и звоник"
       />
       <img
+        class="fade"
         src="../assets/kupola.jpg"
         alt="vitraz"
         title="Слика Храма - купола"
       />
       <img
+        class="fade"
         src="../assets/slide3.jpg"
         alt="slika3"
         title="Слика Храма - главни улаз"
       />
       <img
+        class="fade"
         src="../assets/slide5.jpg"
         alt="slika5"
         title="Слика Храма - порта"
       />
       <img
+        class="fade"
         src="../assets/slide6.jpg"
         alt="slika6"
         title="Слика Храма - улаз двориште"
       />
       <img
+        class="fade"
         src="../assets/vitraz.jpg"
         alt="vitraz"
         title="Слика Храма - витраж"
       />
       <img
+        class="fade"
         src="../assets/slide7.jpg"
         alt="slika7"
         title="Слика Храма - улаз и купола"
       />
       <img
+        class="fade"
         src="../assets/slide1.jpg"
         alt="slika1"
         title="Слика Храма - пејзаж"
@@ -108,10 +116,22 @@ onMounted(() => {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: none;
+      display: inline-block;
 
       &:first-child {
         display: block;
+      }
+
+      .fade {
+        animation: fade 1.5s;
+        @keyframes fade {
+          from {
+            opacity: 0.4;
+          }
+          to {
+            opacity: 1;
+          }
+        }
       }
     }
   }
